@@ -166,6 +166,8 @@ export default class News extends Component {
                           : element.urlToImage
                       }
                       newsUrl={element.url}
+                      date= {element.publishedAt ? new Date(element.publishedAt).toGMTString() : ""}
+                      author= {element.author ? element.author : "Unknown" }
                     />
                   </div>
                 );
